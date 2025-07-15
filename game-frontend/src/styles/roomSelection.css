@@ -1,0 +1,33 @@
+.room-selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9ecef;
+}
+
+.room-selection-container h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #343a40;
+}
+
+.room-selection-container button {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.room-selection-container button:hover {
+  background-color: #0056b3;
+}
+
+.room-selection-container button:last-child {
+  margin-bottom: 0;
+}

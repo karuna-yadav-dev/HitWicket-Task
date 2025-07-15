@@ -1,0 +1,145 @@
+body {
+  background-color: #1c1c1c;
+  color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+.game-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #f8f9fa;
+}
+
+.winner-banner {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.game-board {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 7px;
+  background-color: #343a40;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.game-row {
+  display: flex;
+  gap: 7px;
+}
+
+.game-cell {
+  width: 80px;
+  height: 80px;
+  background-color: #292b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-cell.occupied {
+  background-color: #87cefa;
+}
+
+.game-cell.selected {
+  background-color: #ffa500;
+}
+
+.game-cell.unclickable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.game-cell:hover {
+  background-color: #6c757d;
+}
+
+.possible-moves {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.possible-moves button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.possible-moves button:hover {
+  background-color: #45a049;
+}
+
+.move-history {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+  background-color: #343a40;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.move-history h2 {
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
+}
+
+.move-history ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.move-history li {
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
+}
+
+.move-history li::before {
+  content: "•";
+  color: #ffc107;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Specific styles for captured pieces or special moves */
+.move-history li span.captured {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .game-cell {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-cell {
+    width: 50px;
+    height: 50px;
+  }
+}

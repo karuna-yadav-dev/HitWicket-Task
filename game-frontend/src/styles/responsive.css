@@ -1,0 +1,73 @@
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .login-form,
+  .register-form {
+    padding: 1.5rem;
+  }
+
+  .login-form input,
+  .register-form input {
+    font-size: 1rem;
+  }
+
+  .login-form button,
+  .register-form button {
+    font-size: 1rem;
+  }
+
+  .room-selection-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .room-selection-container button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .game-cell {
+    width: 60px;
+    height: 60px;
+  }
+
+  .game-controls button {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .login-form,
+  .register-form {
+    padding: 1rem;
+  }
+
+  .login-form input,
+  .register-form input {
+    font-size: 0.875rem;
+  }
+
+  .login-form button,
+  .register-form button {
+    font-size: 0.875rem;
+  }
+
+  .room-selection-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .room-selection-container button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .game-cell {
+    width: 50px;
+    height: 50px;
+  }
+
+  .game-controls button {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
